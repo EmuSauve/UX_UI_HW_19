@@ -67,7 +67,7 @@ header {
     background-color: white;
 }
 
-header .contentMaxWidth {
+.logoAndMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,14 +75,14 @@ header .contentMaxWidth {
 }
 
 /* Navigation */
-.headerNav {
+.headerNav{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 25px;
     overflow: hidden;
 }
 
-.headerNav ul {
+.desktopMenu {
     display: flex;
     width: 375px;
     justify-content: space-between;
@@ -108,9 +108,11 @@ header .contentMaxWidth {
     color: #888888;
 }
 
-.mobileMenuIcon {
+.mobileMenu, .mobileToggleMenu  {
     display: none;
+    width: ;
 }
+
 
 /* Hero Space */
 .heroSpace {
@@ -219,10 +221,10 @@ header .contentMaxWidth {
 }
 
 .projectImageBox {
-    background-position: right;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
+    background-position: center;
 }
 
 .projectImage1 {
@@ -385,29 +387,57 @@ footer .contentMaxWidth {
     }
 
     /* Header */
+    .logoAndMenu {
+        padding-bottom: 15px;
+    }
+
     .logoImage {
         width: 150px;
     }
 
-    /* Navigation */
-    header .contentMaxWidth {
-        position: relative;
+    /* Navigation */   
+    .headerNav{
+        font-size: 20px;
     }
-    
-    .headerNav a {
+
+    .desktopMenu{
         display: none;
     }
 
-    .headerNav .mobileMenuIcon {
+    .mobileMenu {
         display: block;
-        position: absolute;
-        right: 0;
-        top: 29px;
+        text-align: right;
     }
- 
+
+    .mobileToggleMenu {
+        display: block;
+        background-color: #FFD935;
+    }
+
+    .mobileToggleMenu ul {
+        width: 100%;
+    }
+
+    .mobileToggleMenu li {
+        padding: 15px 0;
+        border-bottom: solid #CBA70A 1px;
+    }
+
+    #lastToggleMenu {
+        border-bottom: none;
+    }
+    
+    .mobileToggleMenu a:hover {
+        color: white;
+    }
+    
+    .mobileToggleMenu a:active {
+        color: white;
+    }
+    
     /* Hero Space */
     .heroSpace {
-        padding-top: 15px;
+        padding-top: 30px;
         margin-bottom: 30px;
     }
 

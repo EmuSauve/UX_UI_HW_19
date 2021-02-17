@@ -20,16 +20,37 @@
     <!-- Header -->
     <header>
         <div class="contentMaxWidth">
-            <a href="index.html"><img class="logoImage" src="images/logo.svg" alt="Emu Sauve / Home"></a>
-            <nav class="headerNav">
-                <ul>
+            <div class="logoAndMenu">
+                <a href="index.html"><img class="logoImage" src="images/logo.svg" alt="Emu Sauve / Home"></a>
+                <!--Menu normal-->
+                <nav class="headerNav">
+                    <ul class="desktopMenu">
+                        <li><a id="onThePage" href="#projects">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Résumé</a></li>
+                    </ul>
+                </nav>
+                <!--Menu mobile-->
+                <div class="mobileMenu">
+                    <a class="mobileMenuIcon" href="#"><img src="images/hamburger.svg" alt="Menu icon"></a>
+                </div>
+            </div>
+                <!-- <ul>
                     <li><a class="mobileMenuIcon" href="#"><img src="images/hamburger.svg" alt="Menu icon"></a></li>
                     <li><a id="onThePage" href="#">Projects</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Résumé</a></li>
-                </ul>
-            </nav>
+                </ul> -->
         </div>
+        <nav class="headerNav mobileToggleMenu">
+            <div class="contentMaxWidth">
+                <ul>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li id="lastToggleMenu">Résumé</li></a>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero space -->
@@ -48,7 +69,7 @@
 
     <!-- Projects -->
     <!-- My Projects section coded using CSS flex -->
-    <section class="projectsSection">
+    <section class="projectsSection" id="projects">
         <div class="contentMaxWidth">
             <h1 class="homepageContentH1">Projects</h1>
             <!-- Eva -->
@@ -139,9 +160,10 @@
         </div>
     </footer>
 
-    <!-- Java script -->
-    <script src="index.js"></script>
-
 </body>
+
+<!-- Java script and jQuery-->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 
 </html>
