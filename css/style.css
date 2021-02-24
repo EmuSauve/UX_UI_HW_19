@@ -110,7 +110,6 @@ header {
 
 .mobileMenu, .mobileToggleMenu  {
     display: none;
-    width: ;
 }
 
 
@@ -127,12 +126,11 @@ header {
 
 .heroTextBox {
     width: 70%;
-    padding-right: 50px;
     padding-bottom: 20px;
 }
 
 #heroTitle {
-    font-size: 60px;
+    font-size: 65px;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -145,6 +143,7 @@ header {
     margin-bottom: 30px;
     line-height: 1.5;
     font-size: 22px;
+    width: 86%;
 }
 
 .highlightedText {
@@ -196,11 +195,15 @@ header {
 .projectTextBox {
     color: white;
     width: 50%;
-    padding: 5% 1% 5% 5%;
+    padding: 6% 0% 6% 5%;
+}
+
+.myRole {
+    font-size: 15px;
 }
 
 .projectTextBox img {
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 
 .projectTextBox h3 {
@@ -261,14 +264,11 @@ header {
 
 .skillBox h3 {
     margin: 10px 0 15px;
+    font-weight: 500;
 }
 
 .skillBox img {
     width: 75%;
-}
-
-.skillBox p {
-    text-align: left;
 }
 
 .skill1 {
@@ -335,7 +335,7 @@ footer .contentMaxWidth {
     
     /* Hero Space */
       #heroTitle {
-        font-size: 43px;
+        font-size: 45px;
     }
 
     .heroParagraph {
@@ -421,6 +421,7 @@ footer .contentMaxWidth {
     .mobileToggleMenu li {
         padding: 15px 0;
         border-bottom: solid #CBA70A 1px;
+        text-align: center;
     }
 
     #lastToggleMenu {
@@ -428,11 +429,11 @@ footer .contentMaxWidth {
     }
     
     .mobileToggleMenu a:hover {
-        color: white;
+        color: #A99232;
     }
     
     .mobileToggleMenu a:active {
-        color: white;
+        color: #A99232;
     }
     
     /* Hero Space */
@@ -449,14 +450,17 @@ footer .contentMaxWidth {
         width: 100%;
         padding: 0px;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     #heroTitle {
         font-size: 37px;
+        text-align: center;
     }
 
     .heroParagraph {
         font-size: 19px;
+        width: 100%;
     }
 
     .heroTextBox a {
@@ -475,6 +479,7 @@ footer .contentMaxWidth {
     /* Projects */
     .projectsSection .contentMaxWidth {
         width: 100%;
+        text-align: center;
     }
 
     .projectsSection {

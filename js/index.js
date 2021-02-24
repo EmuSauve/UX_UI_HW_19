@@ -13,10 +13,17 @@ $(function(){
 // Navigation
 $(".mobileToggleMenu").hide();
 
+var menuOpen = false;
+
 $(".mobileMenuIcon").on("click", function(){
     $(".mobileToggleMenu").slideToggle();
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+        $(".mobileMenuIcon").html("<img src='images/close.svg' alt='Close icon'>");
+    } else {
+        $(".mobileMenuIcon").html("<img src='images/hamburger.svg' alt='Menu icon'>");
+    }
 });
-
 
 // Projects link hover
 // Using jQuery for Unit 19 homework / Recode later using CSS 
